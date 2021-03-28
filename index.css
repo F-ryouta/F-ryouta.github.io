@@ -1,0 +1,257 @@
+html{
+    font-size: 100%;
+}
+body{
+    margin: 0;
+}
+
+li{
+    list-style: none;
+}
+
+.wrapper{
+    max-width: 1200px;
+    padding: 0 16px;
+    margin: 0 auto;
+}
+
+a{
+    
+}
+
+img{
+    max-width: 100%;
+}
+
+
+/* header */
+header{
+    width: 100%;
+    background-color: white;
+    position: fixed;
+    top: 0px;
+    z-index: 999;
+}
+header>.wrapper{
+    padding: 10px;
+}
+nav .wrapper{
+    display: flex;
+    width: auto ;
+    color: white;
+    line-height: 40px;
+}
+nav{
+    background-color: rgb(65, 63, 63);
+    height: 40px;
+    width: auto;
+}
+header a{
+    margin-right: 70px;
+    font-size: 0.9rem;
+    color: white;
+    text-decoration: none;
+}
+    
+
+
+/* main-pickup */
+.pickup{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 150px;
+    margin-bottom: 150px;
+}
+.pickup .item{
+    width: 32%;
+    height: 230px;
+}
+.link{
+    text-align: center;
+}
+.link a{
+    color:black;
+    display: block;
+    font-size: 0.9rem;
+    transition: all 2s;
+}
+.link a:hover{
+    text-decoration: none;
+}
+.item p{
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+
+/* content-aside */
+.content-aside{
+    display: flex;
+    justify-content: pace-between;
+}
+.content{
+    width: 65%;
+    margin-right: 60px;
+}
+aside{
+    width: 28%;
+    margin-top: 40px;
+}
+
+
+/* main-content */
+.content-item{
+    margin-bottom: 80px;
+}
+.content-text{
+    width: 90%;
+    margin: 0 auto;
+    font-size: 0.9rem;   
+}
+.content-text div{
+    text-align: center;
+}
+.content-text a{
+    color: black;
+}
+
+
+/* main-aside */
+.name{
+    margin-bottom: 60px;
+}
+.name div{
+    text-align: center;
+
+}
+.name img{
+    border-radius: 50%;
+    height: 130px;
+    width: 130px;
+}
+.name p{
+    font-size: 0.8rem;
+}
+
+.ranking div{
+    text-align: center;
+    margin-bottom: 30px;
+}
+.ranking p{
+    margin-top: 0;
+    font-size: 0.8rem;
+    margin-bottom: 30px;
+}
+
+.archive div{
+    text-align: center;
+    margin-bottom: 60px;
+}
+.archive ul{
+    width: 100%;
+    justify-content: flex-start;
+    padding-left: 0;
+}
+.archive a{
+    color: black;
+    font-size: 0.8rem;
+    margin-left: 30px;
+    text-decoration: none;
+}
+.archive li{
+    padding: 20px 0;
+    border-bottom: black solid 1px;
+}
+.archive ul>:nth-child(1){
+    border-top: black solid 1px;
+}
+
+
+/* footer */
+footer{
+    max-width: 100%;
+    margin-top: 150px;
+    background-color: rgb(240, 239, 239);
+}
+footer .wrapper{
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 0;
+}
+.about{
+    width: 30%;
+}
+.menu{
+    width: 30%;
+}
+.twitter{
+    width: 30%;
+}
+footer h3{
+    margin-bottom: 50px;
+}
+
+
+/* footer-about */
+.about div{
+    font-size: 0.8rem;
+}
+.about a{
+    color: black;
+    text-decoration: none;
+}
+.about li::before{
+    content: '-';
+}
+.about p{
+    margin-bottom: 30px;
+}
+ 
+
+/* footer-menu */ 
+.menu li{
+    padding: 15px;
+    border-bottom: black solid 1px;
+    font-size: 0.9rem;
+}
+.menu-li{
+    border-top: black solid 1px;
+}
+.menu a{
+    color: black;
+    text-decoration: none;
+}
+
+
+/* メディアクエリ */
+@media(min-width:600px) and (max-width:800px){
+    body{
+        width: 100%;
+    }
+    .pickup{
+        flex-direction: column;
+    }
+    .pickup .item{
+        width: 100%;
+        margin-bottom: 200px;
+    }
+    .content-aside{
+        flex-direction: column;
+    }
+    .content{
+        width: 100%;
+    }
+    aside{
+        width: 100%;
+    }
+    footer .wrapper{
+        flex-direction: column;
+        margin:;
+    }
+    .about,
+    .menu,
+    .twitter{
+        width: 100%;
+        background-color: rgb(217, 241, 241);
+    }
+}
